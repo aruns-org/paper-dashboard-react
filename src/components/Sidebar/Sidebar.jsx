@@ -35,7 +35,7 @@ class Sidebar extends React.Component {
       <div className="sidebar" data-color={this.props.bgColor} data-active-color={this.props.activeColor}>
         <div className="logo">
           <a
-            href="https://www.creative-tim.com"
+            href="https://formfly.intuit.com"
             className="simple-text logo-mini"
           >
             <div className="logo-img">
@@ -43,10 +43,10 @@ class Sidebar extends React.Component {
             </div>
           </a>
           <a
-            href="https://www.creative-tim.com"
+            href="https://formfly-stage.intuit.com"
             className="simple-text logo-normal"
           >
-            Creative Tim
+            formfly
           </a>
         </div>
         <div className="sidebar-wrapper" ref="sidebar">

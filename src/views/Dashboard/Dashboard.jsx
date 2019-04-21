@@ -27,10 +27,10 @@ class Dashboard extends React.Component {
     return (
       <div className="content">
         <Row>
-          <Col xs={12} sm={6} md={6} lg={3}>
-          <Card className="card-plain">
+          <Col xs={12}>
+          <Card>
               <CardHeader>
-                <CardTitle tag="h4">Table on Plain Background</CardTitle>
+                <CardTitle tag="h4">Keys</CardTitle>
                 <p className="card-category"> Here is a subtitle for this table</p>
               </CardHeader>
               <CardBody>
@@ -68,124 +68,6 @@ class Dashboard extends React.Component {
                 </Table>
               </CardBody>
             </Card>  
-            <Card className="card-stats">
-              <CardBody>
-                <Row>
-                  <Col xs={5} md={4}>
-                    <div className="icon-big text-center">
-                      <i className="nc-icon nc-globe text-warning" />
-                    </div>
-                  </Col>
-                  <Col xs={7} md={8}>
-                    <div className="numbers">
-                      <p className="card-category">Capacity</p>
-                      <CardTitle tag="p">150GB</CardTitle>
-                    </div>
-                  </Col>
-                </Row>
-              </CardBody>
-              <CardFooter>
-                <hr />
-                <Stats>
-                  {[
-                    {
-                      i: "fas fa-sync-alt",
-                      t: "Update Now"
-                    }
-                  ]}
-                </Stats>
-              </CardFooter>
-            </Card>
-          </Col>
-          <Col xs={12} sm={6} md={6} lg={3}>
-            <Card className="card-stats">
-              <CardBody>
-                <Row>
-                  <Col xs={5} md={4}>
-                    <div className="icon-big text-center">
-                      <i className="nc-icon nc-money-coins text-success" />
-                    </div>
-                  </Col>
-                  <Col xs={7} md={8}>
-                    <div className="numbers">
-                      <p className="card-category">Revenue</p>
-                      <CardTitle tag="p">$ 1,345</CardTitle>
-                    </div>
-                  </Col>
-                </Row>
-              </CardBody>
-              <CardFooter>
-                <hr />
-                <Stats>
-                  {[
-                    {
-                      i: "far fa-calendar",
-                      t: "Last day"
-                    }
-                  ]}
-                </Stats>
-              </CardFooter>
-            </Card>
-          </Col>
-          <Col xs={12} sm={6} md={6} lg={3}>
-            <Card className="card-stats">
-              <CardBody>
-                <Row>
-                  <Col xs={5} md={4}>
-                    <div className="icon-big text-center">
-                      <i className="nc-icon nc-vector text-danger" />
-                    </div>
-                  </Col>
-                  <Col xs={7} md={8}>
-                    <div className="numbers">
-                      <p className="card-category">Errors</p>
-                      <CardTitle tag="p">23</CardTitle>
-                    </div>
-                  </Col>
-                </Row>
-              </CardBody>
-              <CardFooter>
-                <hr />
-                <Stats>
-                  {[
-                    {
-                      i: "far fa-clock",
-                      t: "In the last hour"
-                    }
-                  ]}
-                </Stats>
-              </CardFooter>
-            </Card>
-          </Col>
-          <Col xs={12} sm={6} md={6} lg={3}>
-            <Card className="card-stats">
-              <CardBody>
-                <Row>
-                  <Col xs={5} md={4}>
-                    <div className="icon-big text-center">
-                      <i className="nc-icon nc-favourite-28 text-primary" />
-                    </div>
-                  </Col>
-                  <Col xs={7} md={8}>
-                    <div className="numbers">
-                      <p className="card-category">Followers</p>
-                      <CardTitle tag="p">+45K</CardTitle>
-                    </div>
-                  </Col>
-                </Row>
-              </CardBody>
-              <CardFooter>
-                <hr />
-                <Stats>
-                  {[
-                    {
-                      i: "fas fa-sync-alt",
-                      t: "Update now"
-                    }
-                  ]}
-                </Stats>
-              </CardFooter>
-            </Card>
           </Col>
         </Row>
         <Row>

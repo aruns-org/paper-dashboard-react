@@ -1,6 +1,6 @@
 import Dashboard from "views/Dashboard/Dashboard.jsx";
 import Notifications from "views/Notifications/Notifications.jsx";
-import Icons from "views/Icons/Icons.jsx";
+/* import Icons from "views/Icons/Icons.jsx"; */
 import Typography from "views/Typography/Typography.jsx";
 import TableList from "views/TableList/TableList.jsx";
 import Maps from "views/Maps/Maps.jsx";
@@ -13,6 +13,7 @@ var dashRoutes = [
     icon: "nc-icon nc-bank",
     component: Dashboard
   },
+/*
   {
     path: "/icons",
     name: "Icons",
@@ -50,6 +51,7 @@ var dashRoutes = [
     name: "Upgrade to PRO",
     icon: "nc-icon nc-spaceship"
   },
+*/
   { redirect: true, path: "/", pathTo: "/dashboard", name: "Dashboard" }
 ];
 export default dashRoutes;
