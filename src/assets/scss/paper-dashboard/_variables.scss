@@ -4,8 +4,8 @@
 
 $font-color:                 #66615b !default;
 $fill-font-color:            rgba(255, 255, 255, 0.8);
-$font-family-sans-serif:     'Montserrat', "Helvetica", Arial, sans-serif;
-$sans-serif-family:          'Montserrat', 'Helvetica Neue',  Arial, sans-serif;
+$font-family-sans-serif:     AvenirNextforINTUIT, "Avenir Next", Futura, sans-serif;
+$sans-serif-family:          AvenirNextforINTUIT, "Avenir Next", Futura, sans-serif;
 
 
 $none:                       0   !default;
@@ -66,7 +66,8 @@ $default-states-color:       #403D39 !default;
 $smoke-bg:                   #F5F5F5 !default;
 $pale-bg:                    #FFFCF5 !default;
 $medium-pale-bg:             #F1EAE0 !default;
-$default-body-bg:                 #f4f3ef !default;
+/*$default-body-bg:                 #f4f3ef !default; */
+$default-body-bg:                 #fff !default;
 
 $primary-color:              #51cbce !default;
 $primary-states-color:       darken($primary-color, 10%) !default;
@@ -357,7 +358,7 @@ $social-linkedin: 			         #0077B5 !default;
 $social-linkedin-state-color:        darken(#0077B5, 5%) !default;
 
 // Sidebar variables
-$sidebar-width:              calc(100% - 260px) !default;
+$sidebar-width:              calc(100% - 200px) !default;
 $sidebar-mini-width:         calc(100% - 80px) !default;
 
 

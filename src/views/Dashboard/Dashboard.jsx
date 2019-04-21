@@ -5,9 +5,11 @@ import {
   CardBody,
   CardFooter,
   CardTitle,
+  Table,
   Row,
   Col
 } from "reactstrap";
+import { thead, tbody } from "variables/general";
 // react plugin used to create charts
 import { Line, Pie } from "react-chartjs-2";
 // function that returns a color based on an interval of numbers
@@ -26,6 +28,46 @@ class Dashboard extends React.Component {
       <div className="content">
         <Row>
           <Col xs={12} sm={6} md={6} lg={3}>
+          <Card className="card-plain">
+              <CardHeader>
+                <CardTitle tag="h4">Table on Plain Background</CardTitle>
+                <p className="card-category"> Here is a subtitle for this table</p>
+              </CardHeader>
+              <CardBody>
+                <Table responsive>
+                  <thead className="text-primary">
+                    <tr>
+                      {thead.map((prop, key) => {
+                        if (key === thead.length - 1)
+                          return (
+                            <th key={key} className="text-right">
+                              {prop}
+                            </th>
+                          );
+                        return <th key={key}>{prop}</th>;
+                      })}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {tbody.map((prop, key) => {
+                      return (
+                        <tr key={key}>
+                          {prop.data.map((prop, key) => {
+                            if (key === thead.length - 1)
+                              return (
+                                <td key={key} className="text-right">
+                                  {prop}
+                                </td>
+                              );
+                            return <td key={key}>{prop}</td>;
+                          })}
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </Table>
+              </CardBody>
+            </Card>  
             <Card className="card-stats">
               <CardBody>
                 <Row>
