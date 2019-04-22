@@ -3,7 +3,7 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
+/*  CardFooter, */
   CardTitle,
   Table,
   Row,
@@ -11,15 +11,15 @@ import {
 } from "reactstrap";
 import { thead, tbody } from "variables/general";
 // react plugin used to create charts
-import { Line, Pie } from "react-chartjs-2";
+// import { Line, Pie } from "react-chartjs-2";
 // function that returns a color based on an interval of numbers
 
-import Stats from "components/Stats/Stats.jsx";
+// import Stats from "components/Stats/Stats.jsx";
 
 import {
-  dashboard24HoursPerformanceChart,
-  dashboardEmailStatisticsChart,
-  dashboardNASDAQChart
+  //dashboard24HoursPerformanceChart,
+  //dashboardEmailStatisticsChart,
+  //dashboardNASDAQChart
 } from "variables/charts.jsx";
 
 class Dashboard extends React.Component {
